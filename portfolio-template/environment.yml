@@ -1,0 +1,8 @@
+name: chess
+channels: [conda-forge]
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - chess>=1.11
+      - pytest>=8

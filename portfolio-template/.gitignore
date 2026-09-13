@@ -1,0 +1,9 @@
+my_games.pgn
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+chessenv/
+.venv/
+stockfish*
+!stockfish.md
+.DS_Store
