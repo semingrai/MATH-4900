@@ -6,12 +6,17 @@
 
 ## What I did to get it running (exact commands, in order)
 ```
+%pip install chess -q                                  # setup cell: python-chess
+apt-get install -y -q stockfish                        # setup cell, Colab only
+!git clone https://github.com/stevexyz/PyTuroChamp     # download the engine
+# started PyTuroChamp as a UCI engine via PyTuroChamp/ptc_xboard.py
 ```
 
 ## What broke and how I fixed it
-
+Nothing broke. The setup cell installed python-chess and Stockfish, and PyTuroChamp ran without changes.
 ## How I ran a game through the harness
-
+- vs Stockfish: Stockfish at Elo 1350, 0.1seconds per move; PyTuroChamp played as White.
+- Both games saved with save_pgn() to games/___.pgn and games/___.pgn.
 ## My one change (Week B)
 
 ## Results
