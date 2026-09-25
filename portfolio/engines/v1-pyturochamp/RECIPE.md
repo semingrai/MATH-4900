@@ -18,6 +18,6 @@ Nothing broke. The setup cell installed python-chess and Stockfish, and PyTuroCh
 - vs Stockfish: Stockfish at Elo 1350, 0.1seconds per move; PyTuroChamp played as White.
 - Both games saved with save_pgn() to games/___.pgn and games/___.pgn.
 ## My one change (Week B)
-
+**Change:** mobility weight 0.5 → 1.0 in turing_eval. Everything else identical (same bot, 20 games, max_plies=120, seed=1, colours alternating).
 ## Results
 See `results.csv` in this folder.
