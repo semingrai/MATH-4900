@@ -1,16 +1,41 @@
 # v2-andoma — my recipe
 
-**Source:** <GitHub link>   **License:** <from RECON.md>
+**Source:** <https://github.com/healeycodes/andoma>   **License:** MIT
+
+**Andoma is a small Python engine built on python-chess: minimax (negamax) search with alpha-beta pruning, captures-first move ordering, and an evaluation from piece values plus piece-square tables. It speaks UCI through `main.py`.**
 
 ## What I did to get it running (exact commands, in order)
 ```
+%pip install chess -q                                   # setup cell: python-chess (already had 1.11.2)
+git clone https://github.com/healeycodes/andoma.git     # download the engine (did NOT pip install its requirements.txt)
+# started Andoma as a UCI engine from inside its folder:
+#   chess.engine.SimpleEngine.popen_uci([sys.executable, "main.py", "--depth", "3"], cwd="andoma")
 ```
 
 ## What broke and how I fixed it
+- Stockfish was "NOT FOUND" in the setup cell, so I set `STOCKFISH_PATH` to my Windows binary (as in v1).
+- On Windows, Jupyter needs `asyncio.WindowsProactorEventLoopPolicy()` before python-chess can start engine subprocesses, so I added it to the setup cell (as in v1).
+- I skipped `pip install -r requirements.txt` because it pins python-chess 1.6.1 and would downgrade my install.
 
 ## How I ran a game through the harness
+- Andoma ran at `--depth 3`. It ignores the clock, so `Limit(time=1)` only satisfies python-chess.
+- vs me: Andoma played White and I played Black, entering moves by hand. Saved to `games/v2-vs-me.pgn`.
+- vs Stockfish: Stockfish at Elo 1350 with 0.1 s per move, and Andoma played White. Stockfish won 0-1 by mate on move 37 (37...Qxf1#). Saved to `games/v2-vs-stockfish.pgn`.
 
 ## My one change (Week B)
+**Change:** search depth 2 → 3 in `ab_bot`. Everything else stayed the same: material-only eval, alpha-beta with captures first, 6 games, max_plies=80, seed=1, colours alternating.
+
+**Why this one:** this week is about looking ahead, so I wanted to test whether one more ply actually wins games.
 
 ## Results
 See `results.csv` in this folder.
+```
+position,depth,nodes_without_pruning,nodes_with_pruning,nodes_with_pruning_and_ordering,ratio_or_points
+start,3,9323,581,581,16.0
+Italian,3,46477,3645,2338,19.9
+open middle,3,42942,1633,1953,22.0
+match depth3 vs depth2 (6 games),,,,,3.5
+```
+**Nodes:** at depth 3, alpha-beta with ordering visited 16–22× fewer nodes than plain negamax and gave the same answer. Ordering helped in the Italian (3,645 → 2,338) but not at the start, where there are no captures, or in the open middlegame (1,633 → 1,953).
+
+**Match:** depth 3 scored 3.5/6 against depth 2 (3 decisive games). Six games are too few to show that depth 3 is stronger.

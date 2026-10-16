@@ -1,0 +1,5 @@
+position,depth,nodes_without_pruning,nodes_with_pruning,nodes_with_pruning_and_ordering,ratio_or_points
+start,3,9323,581,581,16.0
+Italian,3,46477,3645,2338,19.9
+open middle,3,42942,1633,1953,22.0
+match depth3 vs depth2 (6 games),,,,,3.5
