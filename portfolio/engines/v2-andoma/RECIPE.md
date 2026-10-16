@@ -19,10 +19,12 @@ git clone https://github.com/healeycodes/andoma.git     # download the engine (d
 
 ## How I ran a game through the harness
 - I ran Andoma at `--depth 2` and at `--depth 3`, one game each against me and against Stockfish. It ignores the clock, so `Limit(time=1)` only satisfies python-chess. Andoma played White in every game.
-- vs me: I played Black, entering moves by hand. Saved to `games/v2-d2-vs-me.pgn` and `games/v2-d3-vs-me.pgn`.
+- vs me: I played Black, entering moves by hand.
+  - depth 2: I won 0-1 by mate on move 27 (27...Qxf2#). Saved to `games/v2-d2-vs-me.pgn`.
+  - depth 3: Andoma won 1-0 by mate on move 41 (41. Rc8#). Saved to `games/v2-d3-vs-me.pgn`.
 - vs Stockfish: Stockfish at Elo 1350 with 0.1 s per move, the same as in v1.
-  - depth 2: Stockfish won 0-1 by mate on move 44 (44...Rxc1#). Saved to `games/v2-d2-vs-stockfish.pgn`.
-  - depth 3: Andoma won 1-0 by mate on move 89 (89. Qc1#). Saved to `games/v2-d3-vs-stockfish.pgn`.
+  - depth 2: Stockfish won 0-1 by mate on move 68 (68...Rc6#). Saved to `games/v2-d2-vs-stockfish.pgn`.
+  - depth 3: Stockfish won 0-1 by mate on move 32 (32...Qxc2#). Saved to `games/v2-d3-vs-stockfish.pgn`.
 
 ## My one change (Week B)
 **Change:** search depth 2 → 3 in `ab_bot`. Everything else stayed the same: material-only eval, alpha-beta with captures first, 6 games, max_plies=80, seed=1, colours alternating.

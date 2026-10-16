@@ -1,0 +1,10 @@
+[Event "Gambit Lab"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Andoma (depth 2)"]
+[Black "Me"]
+[Result "0-1"]
+
+1. Nc3 d5 2. Nf3 Nc6 3. d3 Bg4 4. Nd2 e6 5. Rb1 Bb4 6. Nxd5 Qxd5 7. c3 Ba5 8. Qc2 Nf6 9. e3 O-O 10. a3 Bb6 11. c4 Qh5 12. Qc3 Bc5 13. h3 a5 14. Ra1 Ra6 15. Rb1 Ne5 16. Ra1 Rd8 17. Rb1 Rad6 18. Qxa5 Nxd3+ 19. Bxd3 Rxd3 20. hxg4 Qxh1+ 21. Nf1 Rd1+ 22. Ke2 Bb6 23. Qc3 Ne4 24. Qe5 Qxg2 25. Nd2 R8xd2+ 26. Bxd2 Rxd2+ 27. Ke1 Qxf2# 0-1
+
