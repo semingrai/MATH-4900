@@ -1,4 +1,9 @@
 my_games.pgn
+
+# The Sunfish clone (18 MB of somebody else's GPL v3 code, and it brings its own .git).
+# Get it back with the command in engines/v3-sunfish/RECIPE.md.
+engines/v3-sunfish/sunfish/
+
 __pycache__/
 *.pyc
 .ipynb_checkpoints/

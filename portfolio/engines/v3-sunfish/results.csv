@@ -1,0 +1,8 @@
+experiment,label,depth,nodes,table_hits,move,score,games,points_for_change,decisive
+tt_depth4,start -- TT + deepening (before),4,18077,408,Nf3,-5.0,,,
+tt_depth4,start -- + tp_move first (after),4,8013,138,Nf3,-5.0,,,
+tt_depth4,Italian -- TT + deepening (before),4,21141,373,Bg5,-93.0,,,
+tt_depth4,Italian -- + tp_move first (after),4,9082,365,Bg5,-93.0,,,
+tt_depth4,open middle -- TT + deepening (before),4,13089,440,Nfd2,-197.0,,,
+tt_depth4,open middle -- + tp_move first (after),4,11310,418,Nfd2,-197.0,,,
+port_match,"pst-greedy vs plain greedy, colours alternating (1 unfinished at 120 plies)",,,,,,30,15.5,11

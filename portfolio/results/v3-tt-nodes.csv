@@ -1,0 +1,13 @@
+position,config,nodes,table_hits,move,score
+start,alpha-beta alone,17862,0,Nf3,-5.0
+start,+ table,15807,398,Nf3,-5.0
+start,+ deepening,18077,408,Nf3,-5.0
+start,+ best move first,8013,138,Nf3,-5.0
+Italian,alpha-beta alone,19722,0,Bg5,-93.0
+Italian,+ table,19013,362,Bg5,-93.0
+Italian,+ deepening,21141,373,Bg5,-93.0
+Italian,+ best move first,9082,365,Bg5,-93.0
+open middle,alpha-beta alone,12219,0,Nfd2,-197.0
+open middle,+ table,11745,440,Nfd2,-197.0
+open middle,+ deepening,13089,440,Nfd2,-197.0
+open middle,+ best move first,11310,418,Nfd2,-197.0

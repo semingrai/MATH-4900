@@ -8,7 +8,7 @@
 |---|---|---|---|---|---|
 | v1 | [PyTuroChamp](https://github.com/stevexyz/PyTuroChamp) | Hand-crafted evaluation (1948) | | | |
 | v2 | [Andoma](https://github.com/healeycodes/andoma) | Minimax with alpha-beta pruning | | | |
-| v3 | [Sunfish](https://github.com/thomasahle/sunfish) | Transposition tables + iterative deepening | | | |
+| v3 | [Sunfish](https://github.com/thomasahle/sunfish) | Transposition tables + iterative deepening | [yes](engines/v3-sunfish/) | `tp_move`: try the table's best move first | beat Stockfish 1350 in both saved games (clock-dependent — it lost two earlier ones); the change cut depth-4 nodes by 14–57%, and the port scored 15.5/30 |
 | v4 | [Syzygy tablebases](https://python-chess.readthedocs.io/en/latest/syzygy.html) | Retrograde analysis (perfect play) | | | |
 | v5 | [Stockfish](https://github.com/official-stockfish/Stockfish) | NNUE learned evaluation | | | |
 | v6 | [Leela Chess Zero](https://github.com/LeelaChessZero/lc0) | MCTS + policy/value network | | | |
@@ -19,6 +19,9 @@
 
 ## My own code
 - `scripts/first_engine_game.py` — my first game against Stockfish (Week 2)
+- `scripts/play_sunfish.py` — the v3 harness: Sunfish through python-chess, any opponent, any clock
+- `scripts/tt_search.py` — a transposition table and iterative deepening written by hand (v3)
+- `scripts/run_experiments.py` — the v3 measurements: the depth-4 node table, and the 30-game port
 - `scripts/` — bots I wrote along the way (Greedy, Shannon A, alpha-beta)
 
 ## My games
