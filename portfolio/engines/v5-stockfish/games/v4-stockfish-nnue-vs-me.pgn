@@ -1,0 +1,10 @@
+[Event "Engine v4 -- Stockfish (NNUE)"]
+[Site "Toledo, OH"]
+[Date "2026.11.20"]
+[Round "-"]
+[White "Stockfish 16 (NNUE, depth 10)"]
+[Black "me"]
+[Result "1-0"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nbd2 d5 8. exd5 Nxd5 9. a3 Bxd2+ 10. Bxd2 O-O 11. O-O Bg4 12. h3 Bh5 13. g4 Bg6 14. Re1 Nb6 15. Ba2 Qf6 16. Bg5 Qd6 17. d5 Na5 18. Be7 Qf4 19. Bxf8 Rxf8 20. Ne5 Nac4 21. Nxc4 Nxc4 22. Bxc4 Rd8 23. Qc1 Qd6 24. Qe3 h6 25. Qc3 Qf4 26. Bb3 Be4 27. Qe3 Qxe3 28. Rxe3 Bxd5 29. Bxd5 Rxd5 30. Kh1 Rd2 31. Rae1 Kf8 32. Re8# 1-0
+

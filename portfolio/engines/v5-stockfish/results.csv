@@ -1,0 +1,14 @@
+experiment,setting,label,eval,depth,nodes,nps,time_ms,move,score,games,nnue_points,classical_points,decisive
+speed,depth 10,start,NNUE,10,7548,1078285,23,e4,50,,,,
+speed,depth 10,start,classical,10,23921,1993416,24,e4,17,,,,
+speed,depth 10,Italian,NNUE,10,9052,1293142,15,O-O,41,,,,
+speed,depth 10,Italian,classical,10,40458,2129368,25,O-O,0,,,,
+speed,depth 10,open middle,NNUE,10,25714,1285700,27,h3,32,,,,
+speed,depth 10,open middle,classical,10,57379,2125148,33,a3,17,,,,
+speed,depth 10,Sicilian,NNUE,10,17303,1441916,18,Bg5,60,,,,
+speed,depth 10,Sicilian,classical,10,64053,1883911,40,Bb5,31,,,,
+speed,depth 10,rook endgame,NNUE,10,9932,1241500,15,Rc5,0,,,,
+speed,depth 10,rook endgame,classical,10,5240,1746666,10,f4,0,,,,
+speed,depth 10,king hunt,NNUE,10,8901,1271571,14,c5,38,,,,
+speed,depth 10,king hunt,classical,10,32994,1940823,25,c5,22,,,,
+match,depth 10,"NNUE vs classical, colours alternating, 10 openings x 2",,,,,,,,20,13.0,7.0,14
